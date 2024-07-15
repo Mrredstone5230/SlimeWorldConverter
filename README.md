@@ -1,6 +1,6 @@
 # Strange slime world to vanilla world converter
 
-This runs on python 3.12 using amulet! It was made on MacOS 14.5, but this should work perfectly fine on WSL.
+This runs on python 3.12 using amulet! It was made on MacOS 14.5, but this should work _fine_ on WSL.
 
 Install requirements with `pip install -r requirements.txt`
 
@@ -15,10 +15,12 @@ I know this isn't ideal, but it's the only way I could get it to work properly. 
 
 # Usage
 1. Place your world in the `slime_worlds` folder (ending with .slime)
-2. Run `python main.py <world_name>` (without the .slime) (you can put multiple world names)
-3. Your worlds will be in the 'converted_worlds_zips' as .zip files.
+2. Run `python main.py <world_name> [world_name_2] ...` (without the .slime) (you can put multiple world names)
+3. Your worlds will be in the 'converted_worlds_zips' folder as .zip files.
 4. Enjoy!
 
-### cool detail
+### Little detail
 The converter will always copy the contents of the 'template' before converting the world. This is to get a valid level.dat file. If you want to change default settings, like gamerules or dificulties, you can do it by changing that template/level.dat file. (Level names always get translated though.)
 
+
+### Just to make this clear, I do not intend to fully support/update this in the future. This was more made as a proof of concept more than anything. So, altough I might not fix issues, PRs are always welcomed!
